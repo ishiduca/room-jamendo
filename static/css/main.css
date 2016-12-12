@@ -1,0 +1,70 @@
+* {
+    font-family: "Open Sans", "Arial", "sans-serif";
+    padding: 0;
+    margin: 0;
+}
+
+input:invalid {
+    box-shadow: none;
+}
+
+input[type="search"] {
+    border-radius: 1.5em;
+    border: 1px solid #aaaaaa;
+    padding: .5em .75em;
+    width:    17.5em;
+}
+
+.is-jamendo {
+    color: #ff1f59;
+}
+.is-bg-jamendo {
+    background-color: #ff1f59;
+}
+
+a {
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    margin: 3px 6px;
+    padding: 3px;
+    border: 1px solid #aaaaaa;
+    border-radius: 0.5em;
+}
+
+.button:hover {
+    background-color : #cccccc;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+}
+
+.cols {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#wrap-audio-player {
+    background-color: #000000;
+    color: #aaaaaa;
+    position : fixed;
+    top: 0;
+    width: 100%;
+/*  width: 100wv;*/
+}
+
+#wrap-audio-player>div {
+    flex-wrap:       wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+#wrap-search {
+    margin-top: 106px;
+}
