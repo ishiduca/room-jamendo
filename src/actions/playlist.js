@@ -79,14 +79,12 @@ class ActPlaylist extends Action {
     }
 
     changeTrackIsInterested (track) {
-        setTimeout(() => {
-            this.observer.publish({
-                method: 'changeTrackIsInterested'
-              , params: {
-                    track: track
-                }
-            })
-        }, 0)
+        this.observer.publish({
+            method: 'changeTrackIsInterested'
+          , params: {
+                track: track
+            }
+        })
     }
 
     getAllTracks () {
