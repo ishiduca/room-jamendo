@@ -26,11 +26,9 @@ const Playlist = (props) => {
                 return (
                     <div
                         key={track.id}
-                        className="rows"
+                        className="rows track"
                         style={{
                             backgroundColor: hit ? '#aaaaaa' : ''
-                          , alignItems: 'center'
-                          , borderTop: '1px solid #333333'
                         }}
                     >
                         <div>

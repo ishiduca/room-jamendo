@@ -10,10 +10,11 @@ input:invalid {
 
 input[type="search"] {
     border-radius: 1.5em;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #cccccc;
     padding: .5em .75em;
     width:    17.5em;
 }
+
 
 .is-jamendo {
     color: #ff1f59;
@@ -30,7 +31,7 @@ a {
     display: inline-block;
     margin: 3px 6px;
     padding: 3px;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #cccccc;
     border-radius: 0.5em;
 }
 
@@ -51,7 +52,7 @@ a {
 
 #wrap-audio-player {
     background-color: #000000;
-    color: #aaaaaa;
+    color: #cccccc;
     position : fixed;
     top: 0;
     width: 100%;
@@ -67,4 +68,10 @@ a {
 
 #wrap-search {
     margin-top: 106px;
+}
+
+.track {
+    align-items: center;
+    border-top:  1px solid #cccccc;
+    padding: 3px 0;
 }
