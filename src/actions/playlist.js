@@ -11,7 +11,6 @@ class ActPlaylist extends Action {
         this.uri        = null
         this.connected  = false
         this.label      = 'Jamendo.Playlist'
-        this.anotherLabel = 'Jamendo.Search'
     }
 
     setWebsocket (websocket, readable) {
@@ -19,7 +18,7 @@ class ActPlaylist extends Action {
 
         readable.on('data', response => {
             const methods = ['onGetAllTracks', 'onAddTrack', 'onRemoveTrack']
-            methods.some(method => {return this[method](response) })
+            methods.some(method => {return this[method](response)})
         })
 
         this.getAllTracks()

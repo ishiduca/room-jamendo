@@ -44,7 +44,9 @@ const Playlist = (props) => {
                           , padding: '3px 6px'
                          }}>
                             <h5>
-                                {track.name}
+                                <a href={track.shareurl} target="_blank">
+                                    {track.name}
+                                </a>
                                 <span style={{fontSize:'smaller'}}>
                                     {' (via ' + track.album_name + ') '}
                                 </span>
